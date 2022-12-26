@@ -1,0 +1,85 @@
+html {
+  --main-color: #FFFB83;
+  --sub-color: #002329;
+}
+body {
+  background-image: url("background.jpg");
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 30px;
+  padding-right: 30px;
+  word-break: keep-all;
+}
+img {
+  display: block;
+}
+h1 img {
+  margin-left: auto;
+  margin-right: auto;
+}
+h2 {
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-color);
+  text-align: center;
+}
+h3 {
+  font-size: 40px;
+  text-shadow: 0 0 10px var(--sub-color);
+  text-align: center;
+  color: aqua;
+}
+h4 {
+  font-size: 40px;
+  text-shadow: 0 0 10px var(--sub-color);
+  text-align: center;
+  color: black;
+  margin-bottom: -20px;
+}
+.quiz {
+  width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sungkyu h4 {
+  color: aqua;
+}
+.sungkyu .quiz p {
+  font-size: 32px;
+  color: white;
+  background-color: skyblue;
+  padding: 40px;
+  border-radius: 100px;
+}
+.yumi h4 {
+  color: beige;
+}
+.yumi .quiz p {
+  font-size: 32px;
+  color: rgb(13, 185, 162);
+  background-color: rgb(249, 247, 247);
+  padding: 40px;
+  border-radius: 30px;
+}
+.button {
+  display: block;
+  width: 500px;
+  color: black;
+  background-color: var(--main-color);
+  padding: 40px;
+  border-radius: 200px;
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+  transition: 0.4s;
+}
+.button:hover{
+  background-color: blue;
+  color: red;
+}
