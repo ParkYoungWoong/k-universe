@@ -3,7 +3,9 @@ html {
   --sub-color: #002329;
 }
 body {
+  background-color: #011619;
   background-image: url("background.jpg");
+  background-size: cover;
   padding-top: 120px;
   padding-bottom: 120px;
   padding-left: 30px;
@@ -37,38 +39,45 @@ h4 {
   margin-bottom: -20px;
 }
 .quiz {
-  width: 900px;
-  margin: auto;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.quiz p {
+  font-size: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .sungkyu h4 {
   color: aqua;
 }
 .sungkyu .quiz p {
-  font-size: 32px;
   color: white;
   background-color: skyblue;
-  padding: 40px;
   border-radius: 100px;
 }
 .yumi h4 {
   color: beige;
 }
 .yumi .quiz p {
-  font-size: 32px;
   color: rgb(13, 185, 162);
   background-color: rgb(249, 247, 247);
-  padding: 40px;
   border-radius: 30px;
 }
 .button {
   display: block;
-  width: 500px;
+  max-width: 500px;
   color: black;
   background-color: var(--main-color);
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   border-radius: 200px;
   font-weight: bold;
   font-size: 40px;
@@ -79,7 +88,65 @@ h4 {
   text-align: center;
   transition: 0.4s;
 }
-.button:hover{
+.button:hover {
   background-color: blue;
   color: red;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  h1 img {
+    width: 100%;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h3 br {
+    display: none;
+  }
+  .sungkyu h4,
+  .yumi h4 {
+    font-size: 30px;
+    margin-bottom: 6px;
+  }
+  .quiz {
+    gap: 0;
+  }
+  .quiz img {
+    width: 170px;
+    margin-left: -12px;
+  }
+  .quiz p {
+    font-size: 22px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .button {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .quiz img {
+    width: 120px;
+    margin-right: -50px;
+    position: relative;
+  }
+  .quiz p {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
 }
